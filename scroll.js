@@ -20,9 +20,10 @@ window.addEventListener('scroll', () => {
 
 
 	box2_p.style.left = `${scroll - posArr[1] + 300}px`;
-	let transX = scroll - posArr[2] + 300;
+	// let transX = scroll - posArr[2] + 300;
 
-	box3_h1.style.transform = `translateX(${transX}px)`;
+	box3_h1.style.transform = `translateX(${-500 + scroll}px) scale(${1 + scroll / 400})`;
+	box3_h1.style.opacity = `${2 - scroll / 1000}`;
 
 	//	섹션에 스크롤되어 범위안에 들어오면 활성화되는 코드
 	// if (scroll >= posArr[0] && scroll < posArr[1]) {
